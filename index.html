@@ -25,54 +25,58 @@
     .login-box {
       max-width: 400px;
       margin: 80px auto;
-      padding: 40px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
     }
 
     .login-box h1 {
-      margin: 0 0 35px;
-      font-size: 2rem;     /* bigger */
-      font-weight: 900;    /* extra bold */
+      margin: 0 0 40px;
+      font-size: 2rem;
+      font-weight: 900;    
       text-align: left;
       line-height: 1.4;
-      color: #6a0dad;      /* purple */
+      color: #6a0dad; /* purple */
     }
 
     .login-box form input {
       width: 100%;
-      padding: 16px;              /* taller fields */
-      margin-bottom: 25px;        /* more space between */
-      border: 1px solid #ccc;
+      padding: 18px;
+      margin-bottom: 30px;   /* clear separation */
+      border: 1px solid #bbb;
       border-radius: 6px;
       font-size: 1.1rem;
       display: block;
       box-sizing: border-box;
+      background-color: #f9f9f9; /* light blend into gray bg */
+    }
+
+    .login-box form input:focus {
+      outline: none;
+      border-color: #6a0dad;
+      background-color: #fff;
     }
 
     .login-box form button {
       width: 100%;
-      padding: 16px;              /* tall button */
-      background: #ff6600;
+      padding: 18px;
+      background: #6a0dad;  /* purple button */
       border: none;
       border-radius: 6px;
       color: #fff;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: bold;
       cursor: pointer;
       margin-top: 10px;
     }
 
     .login-box form button:hover {
-      background: #e65c00;
+      background: #580b9e;
     }
 
     .forgot {
       display: block;
-      margin-top: 20px;
+      margin-top: 25px;
       text-align: center;
-      color: #666;
+      color: #444;
       font-size: 1rem;
       text-decoration: none;
     }
