@@ -17,22 +17,29 @@
 
     .login-box {
       width: 100%;
-      max-width: 520px;        /* longer form */
+      max-width: 580px;        /* longer form */
       margin: 100px 0;         
       padding: 40px 20px;      
     }
 
     .login-box h1 {
       margin: 0 0 50px;
-      font-size: 2rem;
-      line-height: 1.4;
-      color: #6a0dad;          
-      font-weight: normal;     
       text-align: left;
     }
 
+    .login-box h1 span {
+      display: block;
+      font-size: 1.5rem;       /* smaller STRATO Webmail */
+      font-weight: normal;
+      color: #6a0dad;          /* purple */
+    }
+
     .login-box h1 strong {
+      display: block;
+      font-size: 2.5rem;       /* larger LOGIN */
       font-weight: 900;        
+      color: #6a0dad;
+      margin-top: 5px;
     }
 
     .login-box form input {
@@ -43,7 +50,7 @@
       border-radius: 6px;
       font-size: 1.1rem;
       box-sizing: border-box;
-      background-color: #f9f9f9;
+      background-color: #fff;   /* white input */
       text-align: left;
     }
 
@@ -88,7 +95,7 @@
 
   <!-- Login Box -->
   <main class="login-box">
-    <h1>STRATO Webmail<br><strong>LOGIN</strong></h1>
+    <h1><span>STRATO Webmail</span><strong>LOGIN</strong></h1>
     <form>
       <input type="text" placeholder="E-Mail-Adresse" required>
       <input type="password" placeholder="Passwort" required>
