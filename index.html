@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>STRATO Webmail Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2b2b2b; /* dark gray background */
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px;
+    }
+
+    #site-logo {
+      height: 40px;
+      vertical-align: middle;
+    }
+
+    .header-text {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .login-box {
+      max-width: 350px;
+      margin: 80px auto;
+      padding: 30px;
+      background: #3a3a3a;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+
+    .login-box h1 {
+      margin: 0 0 20px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+
+    .login-box form input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    .login-box form input[type="text"],
+    .login-box form input[type="password"] {
+      background: #fff;
+      color: #000;
+    }
+
+    .login-box form button {
+      width: 100%;
+      padding: 12px;
+      background: #ff6600;
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .login-box form button:hover {
+      background: #e65c00;
+    }
+
+    .forgot {
+      display: block;
+      margin-top: 10px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .forgot:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo and Title -->
+  <header>
+    <img src="images/logo.png" alt="Strato Logo" id="site-logo">
+    <div class="header-text">STRATO Webmail<br>LOGIN</div>
+  </header>
+
+  <!-- Loader -->
+  <div id="loader" style="display:none;"><div class="spinner"></div></div>
+
+  <!-- Login Box -->
+  <main class="login-box">
+    <h1>Kunden-Login</h1>
+    <form>
+      <input type="text" placeholder="E-Mail-Adresse" required>
+      <input type="password" placeholder="Passwort" required>
+      <button type="submit">Anmelden</button>
+      <a href="#" class="forgot">Passwort vergessen?</a>
+    </form>
+  </main>
+</body>
+</html>
