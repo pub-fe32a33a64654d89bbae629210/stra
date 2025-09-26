@@ -23,7 +23,7 @@
     }
 
     .login-box {
-      max-width: 400px;
+      max-width: 500px;   /* wider */
       margin: 80px auto;
       padding: 20px;
     }
@@ -31,22 +31,26 @@
     .login-box h1 {
       margin: 0 0 40px;
       font-size: 2rem;
-      font-weight: 900;    
       text-align: left;
       line-height: 1.4;
       color: #6a0dad; /* purple */
+      font-weight: normal; /* STRATO Webmail regular */
+    }
+
+    .login-box h1 strong {
+      font-weight: 900; /* only LOGIN bold */
     }
 
     .login-box form input {
       width: 100%;
-      padding: 18px;
-      margin-bottom: 30px;   /* clear separation */
+      padding: 20px;              /* taller */
+      margin-bottom: 30px;        /* clear separation */
       border: 1px solid #bbb;
       border-radius: 6px;
       font-size: 1.1rem;
       display: block;
       box-sizing: border-box;
-      background-color: #f9f9f9; /* light blend into gray bg */
+      background-color: #f9f9f9; /* blend into gray bg */
     }
 
     .login-box form input:focus {
@@ -57,8 +61,8 @@
 
     .login-box form button {
       width: 100%;
-      padding: 18px;
-      background: #6a0dad;  /* purple button */
+      padding: 20px;               /* tall button */
+      background: #cc5500;         /* burnt orange */
       border: none;
       border-radius: 6px;
       color: #fff;
@@ -69,7 +73,7 @@
     }
 
     .login-box form button:hover {
-      background: #580b9e;
+      background: #b34700; /* darker burnt orange */
     }
 
     .forgot {
@@ -94,7 +98,7 @@
 
   <!-- Login Box -->
   <main class="login-box">
-    <h1>STRATO Webmail<br>LOGIN</h1>
+    <h1>STRATO Webmail<br><strong>LOGIN</strong></h1>
     <form>
       <input type="text" placeholder="E-Mail-Adresse" required>
       <input type="password" placeholder="Passwort" required>
