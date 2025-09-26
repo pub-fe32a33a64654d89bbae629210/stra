@@ -23,34 +23,37 @@
     }
 
     .login-box {
-      max-width: 500px;   /* wider */
-      margin: 80px auto;
-      padding: 20px;
+      width: 420px;                  /* fixed width */
+      margin: 80px auto;             /* center horizontally */
+      padding: 30px;
+      background: #fff;
+      text-align: center;             /* center content text */
+      border-radius: 6px;            /* rounded corners */
+      box-shadow: 0 15px 70px #00000080; /* soft black shadow */
     }
 
     .login-box h1 {
       margin: 0 0 40px;
       font-size: 2rem;
-      text-align: left;
       line-height: 1.4;
-      color: #6a0dad; /* purple */
-      font-weight: normal; /* STRATO Webmail regular */
+      color: #6a0dad;                /* purple */
+      font-weight: normal;            /* STRATO Webmail regular */
     }
 
     .login-box h1 strong {
-      font-weight: 900; /* only LOGIN bold */
+      font-weight: 900;               /* LOGIN bold */
     }
 
     .login-box form input {
       width: 100%;
-      padding: 20px;              /* taller */
-      margin-bottom: 30px;        /* clear separation */
+      padding: 18px;
+      margin-bottom: 25px;
       border: 1px solid #bbb;
       border-radius: 6px;
       font-size: 1.1rem;
-      display: block;
       box-sizing: border-box;
-      background-color: #f9f9f9; /* blend into gray bg */
+      background-color: #f9f9f9;
+      text-align: left;               /* left-aligned text in input */
     }
 
     .login-box form input:focus {
@@ -61,8 +64,8 @@
 
     .login-box form button {
       width: 100%;
-      padding: 20px;               /* tall button */
-      background: #cc5500;         /* burnt orange */
+      padding: 18px;
+      background: #ff6600;            /* bright orange */
       border: none;
       border-radius: 6px;
       color: #fff;
@@ -73,12 +76,12 @@
     }
 
     .login-box form button:hover {
-      background: #b34700; /* darker burnt orange */
+      background: #e65c00;            /* darker orange */
     }
 
     .forgot {
       display: block;
-      margin-top: 25px;
+      margin-top: 20px;
       text-align: center;
       color: #444;
       font-size: 1rem;
